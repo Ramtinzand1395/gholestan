@@ -20,7 +20,7 @@ function Form() {
     event.preventDefault();
     setloading({ status: true, value: false });
     try {
-      const response = await fetch("https://golestaniust-e5z3arj6s-ramtinzand1395s-projects.vercel.app/api/login", {
+      const response = await fetch("https://golestaniustac-git-main-ramtinzand1395s-projects.vercel.app/api/login", {
         method: "POST",
         mode: 'no-cors',
         headers: {
