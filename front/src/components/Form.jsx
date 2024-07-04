@@ -29,7 +29,7 @@ function Form() {
         body: JSON.stringify({ Info }),
       });
       const result = await response.json();
-
+console.log("first")
       console.log(result);
 
       if (response.ok) {
