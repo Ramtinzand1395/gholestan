@@ -16,12 +16,11 @@ function Form() {
     });
   };
   // ! ramtin added
-  console.log(Info)
   const submitHandeler = async (event) => {
     event.preventDefault();
     setloading({ status: true, value: false });
     try {
-      const response = await fetch("http://localhost:5000/api/login", {
+      const response = await fetch("https://golestaniustac-git-main-ramtinzand1395s-projects.vercel.app/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
