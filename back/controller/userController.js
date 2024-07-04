@@ -2,8 +2,8 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 
 exports.handleLogin = async (req, res, next) => {
-  const { email, password } = req.body.Info;
-console.log(req.body.Info)
+  const { email, password } = req.body;
+console.log(req.body)
   try {
     const user = await User.findOne({ email });
     if (!user) {
